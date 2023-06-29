@@ -1,0 +1,18 @@
+{% extends 'admin.html' %}
+
+
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+    <br>{% if username %}
+    
+    <h3 style="font-family: 'Lucida Handwriting', cursive;"><i>Welcome To  Signify MR/MS {{username}}</i></h3><br>
+    {% else %}
+        
+    <h1 style="font-family: 'Lucida Handwriting', cursive;"><i>Welcome To Home Page</i></h1>
+    {% endif %}
+</center>
+{% endblock %}
